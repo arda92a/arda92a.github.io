@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arda Öztüner — Computer Vision Engineer &amp; PhD Researcher</title>
+  <meta name="description" content="Arda Öztüner — Computer Vision Engineer at REM People and PhD researcher at Istanbul Technical University. Image matching, 3D reconstruction, object detection and MLOps.">
+  <meta name="theme-color" content="#FBF9F5">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Arda Öztüner — Computer Vision Engineer">
+  <meta property="og:description" content="Deep learning researcher focused on computer vision. CVPR 2026 Workshop author, SIU 2026 1st Prize.">
+  <meta property="og:url" content="https://arda92a.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="bg" aria-hidden="true">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="dots-grid"></div>
+</div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<canvas id="confetti" aria-hidden="true"></canvas>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="#top" class="brand" aria-label="Back to top"><span class="brand-mark">AÖ</span><span class="brand-name">Arda Öztüner</span></a>
+  <nav class="nav-links" id="navLinks" aria-label="Sections">
+    <span class="nav-pill" id="navPill" aria-hidden="true"></span>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#publications">Papers</a>
+    <a href="#awards">Awards</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="kbd-btn" id="cmdOpen" type="button" aria-label="Open quick menu">
+    <span class="kbd-desktop"><kbd>⌘</kbd><kbd>K</kbd></span><span class="kbd-mobile">Menu</span>
+  </button>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero container" id="top">
+  <div class="hero-text">
+    <div class="status reveal"><span class="pulse"></span>Jr. CV Engineer @ REM People · PhD @ ITU</div>
+    <h1 class="hero-title">
+      <span class="line"><span>Arda</span></span>
+      <span class="line"><span><em>Öztüner</em></span></span>
+    </h1>
+    <p class="hero-role reveal" style="--d:3">I build <span class="typed" id="typed">computer vision systems</span><span class="caret" aria-hidden="true"></span></p>
+    <p class="hero-lead reveal" style="--d:4">Deep learning researcher focused on <strong>computer vision</strong> — from image matching and 3D reconstruction to scalable, production-ready <strong>MLOps</strong>.</p>
+    <div class="hero-cta reveal" style="--d:5">
+      <a class="btn btn-primary magnetic" href="#projects">See my work <span class="arr">→</span></a>
+      <a class="btn btn-ghost magnetic" href="assets/Arda_Oztuner_CV.pdf" download>Download CV <span class="arr">↓</span></a>
+    </div>
+    <div class="hero-social reveal" style="--d:6">
+      <a href="https://github.com/arda92a" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/arda-%C3%B6zt%C3%BCner" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+      </a>
+      <button type="button" class="copy-email" data-copy="ardaoztuner3@gmail.com" aria-label="Copy email address">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>
+      </button>
+      <span class="social-hint">ardaoztuner3@gmail.com</span>
+    </div>
+  </div>
+
+  <div class="hero-viz reveal" style="--d:2">
+    <div class="viz-window">
+      <div class="viz-bar">
+        <span class="wdots"><i></i><i></i><i></i></span>
+        <span class="viz-title">retailglue<span class="muted">.viz</span></span>
+        <span class="viz-stat" id="vizStat">detecting…</span>
+      </div>
+      <canvas id="vizCanvas" aria-label="Interactive visualization of product detection and matching between two shelf images" role="img"></canvas>
+      <div class="viz-foot">
+        <span>view_A.jpg</span>
+        <span class="hint">hover a product · click to re-shuffle</span>
+        <span>view_B.jpg</span>
+      </div>
+    </div>
+    <div class="float-badge fb1">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4Z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg>
+      SIU 2026 · 1st Prize
+    </div>
+    <div class="float-badge fb2"><span class="dot iris"></span>CVPR 2026 Workshop</div>
+    <div class="float-badge fb3"><span class="dot mint"></span>F1 88.4%</div>
+  </div>
+
+  <a class="scroll-cue" href="#stats" aria-label="Scroll down"><span></span></a>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="stats container" id="stats" aria-label="Highlights">
+  <div class="stat reveal" style="--d:0"><div class="num"><b data-count="88.4" data-dec="1">0</b><i>%</i></div><p>End-to-end F1 score<br><span>RetailGlue</span></p></div>
+  <div class="stat reveal" style="--d:1"><div class="num"><b data-count="20">0</b><i>×</i></div><p>Faster than dense<br><span>matchers (RoMa v2)</span></p></div>
+  <div class="stat reveal" style="--d:2"><div class="num"><b data-count="4">0</b></div><p>Publications<br><span>CVPR W · JVCI · SIU</span></p></div>
+  <div class="stat reveal" style="--d:3"><div class="num"><b data-count="2">0</b><i>×</i></div><p>First prizes<br><span>SIU 2026 · ESTÜ Fair</span></p></div>
+  <div class="stat reveal" style="--d:4"><div class="num"><b data-count="3.89" data-dec="2">0</b></div><p>B.Sc. GPA<br><span>2nd in Faculty</span></p></div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section container" id="about">
+  <div class="sec-head reveal">
+    <span class="sec-label"><i class="dot iris"></i>01 — About</span>
+    <h2>Teaching machines <em>to see</em>,<br>one architecture at a time.</h2>
+  </div>
+
+  <div class="about-grid">
+    <figure class="portrait reveal">
+      <div class="portrait-frame">
+        <img src="assets/img/portrait.jpg" alt="Arda Öztüner in his Eskişehir Technical University graduation gown" width="880" height="1100" loading="lazy">
+      </div>
+      <figcaption class="portrait-tag"><span class="dot mint"></span>Class of 2026 · ESTÜ</figcaption>
+      <span class="portrait-sticker" aria-hidden="true"><b>2nd</b><small>in Faculty</small></span>
+    </figure>
+
+    <div class="about-copy reveal" style="--d:1">
+      <p class="big">I'm a <mark class="hl iris">deep learning</mark> enthusiast with a strong focus on <mark class="hl coral">computer vision</mark> and a deep curiosity for modern architectures.</p>
+      <p>I enjoy diving into the latest research and experimenting with innovative approaches to complex visual problems. Alongside model development, I have hands-on experience with <mark class="hl mint">MLOps</mark> workflows, which helps me build scalable, production-ready AI systems. I thrive in environments that encourage learning, research and continuous improvement.</p>
+
+      <div class="now">
+        <span class="now-label">Currently exploring</span>
+        <div class="chips">
+          <span class="chip sky">3D Reconstruction · VGGT, DUSt3R</span>
+          <span class="chip iris">Generalized Category Discovery</span>
+          <span class="chip coral">NaFlexViT · NaViT · FlexViT</span>
+          <span class="chip mint">Keypoint &amp; Pose Estimation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="edu">
+      <article class="edu-card reveal" style="--d:1">
+        <div class="edu-top"><span class="edu-logo sky">İTÜ</span><span class="edu-date">2026 — 2030</span></div>
+        <h3>Istanbul Technical University</h3>
+        <p>Ph.D. in Computer Engineering <span class="tag">1st year</span></p>
+      </article>
+      <article class="edu-card reveal" style="--d:2">
+        <div class="edu-top"><span class="edu-logo coral">ESTÜ</span><span class="edu-date">Grad. June 2026</span></div>
+        <h3>Eskişehir Technical University</h3>
+        <p>B.Sc. in Computer Engineering</p>
+        <div class="gpa"><div class="gpa-bar"><span style="--w:97.25%"></span></div><b>3.89</b><small>/ 4.00</small></div>
+        <p class="edu-note">Second in the Faculty of Engineering</p>
+      </article>
+      <article class="edu-card reveal" style="--d:3">
+        <div class="edu-top"><span class="edu-logo mint">ESTÜ</span><span class="edu-date">Grad. June 2026</span></div>
+        <h3>Minor in AI &amp; Machine Learning</h3>
+        <p>Eskişehir Technical University</p>
+        <div class="gpa"><div class="gpa-bar"><span style="--w:100%"></span></div><b>4.00</b><small>/ 4.00</small></div>
+      </article>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section container" id="experience">
+  <div class="sec-head reveal">
+    <span class="sec-label"><i class="dot coral"></i>02 — Experience</span>
+    <h2>Where research <em>meets</em> production.</h2>
+  </div>
+
+  <div class="timeline" id="timeline">
+    <div class="tl-line" aria-hidden="true"><span></span></div>
+
+    <article class="tl-item reveal">
+      <div class="tl-node iris"></div>
+      <div class="tl-meta">
+        <span class="tl-date">Jan 2026 — Present</span>
+        <span class="tl-place">Istanbul, Türkiye</span>
+      </div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <span class="tl-logo iris">REM</span>
+          <div><h3>Jr. Computer Vision Engineer</h3><p class="tl-org">REM People</p></div>
+          <span class="now-pill">Now</span>
+        </div>
+        <ul class="ticks">
+          <li>Co-authored <b>RetailGlue</b> (accepted at the <b>CVPR 2026 Image Matching Workshop</b>) — product-level retail image stitching with product detection, <b>DINOv3</b> semantic embeddings and a fine-tuned <b>LightGlue</b> matcher.</li>
+          <li>Researched and applied <b>NaFlexViT</b>, <b>NaViT</b> and <b>FlexViT</b> architectures for computer vision tasks.</li>
+          <li>Explored the <b>3D reconstruction</b> literature (VGGT, VGGT-Omega, DUSt3R…) and applied these models in a 3D product matching pipeline.</li>
+          <li>Researched and implemented state-of-the-art <b>Generalized Category Discovery</b> papers (SimGCD, LegoGCD, PartCo…).</li>
+          <li>Developed a <b>YOLO-Pose</b> model for detecting cooler corners and keypoints.</li>
+        </ul>
+        <div class="chips sm"><span class="chip">DINOv3</span><span class="chip">LightGlue</span><span class="chip">VGGT</span><span class="chip">YOLO-Pose</span><span class="chip">ViT</span></div>
+      </div>
+    </article>
+
+    <article class="tl-item reveal">
+      <div class="tl-node coral"></div>
+      <div class="tl-meta">
+        <span class="tl-date">Aug 2025 — Dec 2025</span>
+        <span class="tl-place">Istanbul, Türkiye</span>
+      </div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <span class="tl-logo coral">REM</span>
+          <div><h3>Computer Vision Engineer Intern</h3><p class="tl-org">REM People</p></div>
+        </div>
+        <ul class="ticks">
+          <li>Improved dataset quality by converting segmentation annotations into <b>oriented bounding boxes</b> using OpenCV and eigenvalue-based methods.</li>
+          <li>Trained YOLO-based shelf and shelf-space detection models with <b>W&amp;B</b> for experiment tracking and visualization.</li>
+        </ul>
+        <div class="chips sm"><span class="chip">YOLO</span><span class="chip">OpenCV</span><span class="chip">OBB</span><span class="chip">Weights &amp; Biases</span></div>
+      </div>
+    </article>
+
+    <article class="tl-item reveal">
+      <div class="tl-node sun"></div>
+      <div class="tl-meta">
+        <span class="tl-date">Jun 2025 — Feb 2026</span>
+        <span class="tl-place">Türkiye</span>
+      </div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <span class="tl-logo sun">TÜB</span>
+          <div><h3>Undergraduate Research Scholar</h3><p class="tl-org">TÜBİTAK 3501 Program</p></div>
+        </div>
+        <ul class="ticks">
+          <li>Developed end-to-end trainable <b>spatio-temporal deep learning architectures</b> for driving videos, focusing on data annotation and model development.</li>
+        </ul>
+        <div class="chips sm"><span class="chip">Video Understanding</span><span class="chip">Spatio-temporal DL</span><span class="chip">Annotation</span></div>
+      </div>
+    </article>
+
+    <article class="tl-item reveal">
+      <div class="tl-node mint"></div>
+      <div class="tl-meta">
+        <span class="tl-date">Jul 2025 — Aug 2025</span>
+        <span class="tl-place">Eskişehir, Türkiye</span>
+      </div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <span class="tl-logo mint">ACD</span>
+          <div><h3>AI &amp; Backend Intern</h3><p class="tl-org">ACD Data Engineering</p></div>
+        </div>
+        <ul class="ticks">
+          <li>Built a <b>microservice-based data analysis platform</b>: users upload datasets, train multiple ML models and compare them through detailed reports and visualizations.</li>
+          <li>Integrated generative models (<b>FLUX</b>, <b>Kandinsky</b>) into an image generation platform with text-to-image and image-to-image pipelines.</li>
+        </ul>
+        <div class="chips sm"><span class="chip">Docker</span><span class="chip">FastAPI</span><span class="chip">MinIO</span><span class="chip">MLflow</span><span class="chip">FLUX</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section container" id="projects">
+  <div class="sec-head reveal">
+    <span class="sec-label"><i class="dot mint"></i>03 — Selected Projects</span>
+    <h2>Things I've <em>built</em>.</h2>
+    <p class="sec-sub">Click any card for the full story.</p>
+  </div>
+
+  <div class="proj-grid">
+    <!-- RetailGlue -->
+    <div class="proj reveal wide" style="--d:0">
+      <button class="proj-card tilt" data-project="retailglue" type="button">
+        <div class="proj-cover c-iris" data-cover="retailglue">
+          <svg viewBox="0 0 400 200" class="cover-art" aria-hidden="true">
+            <g class="shelf">
+              <rect x="20" y="30" width="160" height="140" rx="10" fill="#fff"/>
+              <rect x="220" y="30" width="160" height="140" rx="10" fill="#fff"/>
+              <g fill="none" stroke="#E2DCF8" stroke-width="3"><path d="M30 80h140M30 125h140M30 165h140M230 80h140M230 125h140M230 165h140"/></g>
+              <g class="prods">
+                <rect x="36" y="50" width="20" height="28" rx="3" fill="#C9C2FB"/><rect x="60" y="44" width="16" height="34" rx="3" fill="#FFC9BB"/><rect x="80" y="54" width="26" height="24" rx="3" fill="#B7EBD7"/><rect x="110" y="46" width="18" height="32" rx="3" fill="#FFE2A6"/><rect x="132" y="52" width="24" height="26" rx="3" fill="#BFE0FB"/>
+                <rect x="36" y="98" width="24" height="25" rx="3" fill="#FFE2A6"/><rect x="64" y="92" width="18" height="31" rx="3" fill="#C9C2FB"/><rect x="86" y="96" width="22" height="27" rx="3" fill="#FFC9BB"/><rect x="112" y="100" width="20" height="23" rx="3" fill="#B7EBD7"/><rect x="136" y="94" width="22" height="29" rx="3" fill="#F8C6DA"/>
+                <rect x="236" y="54" width="26" height="24" rx="3" fill="#B7EBD7"/><rect x="266" y="46" width="18" height="32" rx="3" fill="#FFE2A6"/><rect x="288" y="52" width="24" height="26" rx="3" fill="#BFE0FB"/><rect x="316" y="48" width="20" height="30" rx="3" fill="#C9C2FB"/><rect x="340" y="56" width="22" height="22" rx="3" fill="#FFC9BB"/>
+                <rect x="236" y="96" width="22" height="27" rx="3" fill="#FFC9BB"/><rect x="262" y="100" width="20" height="23" rx="3" fill="#B7EBD7"/><rect x="286" y="94" width="22" height="29" rx="3" fill="#F8C6DA"/><rect x="312" y="98" width="24" height="25" rx="3" fill="#BFE0FB"/><rect x="340" y="92" width="18" height="31" rx="3" fill="#FFE2A6"/>
+              </g>
+              <g class="links" fill="none" stroke-width="1.6" stroke-linecap="round">
+                <path d="M93 66 249 66" stroke="#10B981"/><path d="M119 62 275 62" stroke="#F5A524"/><path d="M144 65 300 65" stroke="#3B9EF5"/>
+                <path d="M97 110 247 110" stroke="#FF6B4A"/><path d="M122 112 272 112" stroke="#10B981"/><path d="M147 108 297 108" stroke="#E8508A"/>
+              </g>
+            </g>
+          </svg>
+          <span class="cover-badge">CVPR 2026 Workshop</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-kicker"><span>Image Stitching</span><span>2026</span></div>
+          <h3>RetailGlue</h3>
+          <p>Semantic product-level image stitching for retail shelf panoramas — matching product identities instead of pixels.</p>
+          <div class="proj-metrics"><span><b>88.4%</b> F1</span><span><b>20×</b> faster</span><span><b>SOTA</b></span></div>
+          <div class="chips sm"><span class="chip">YOLOv11l</span><span class="chip">DINOv3</span><span class="chip">LightGlue</span><span class="chip">RANSAC</span></div>
+        </div>
+        <span class="proj-open" aria-hidden="true">↗</span>
+      </button>
+    </div>
+
+    <!-- AeroSearch -->
+    <div class="proj reveal" style="--d:1">
+      <button class="proj-card tilt" data-project="aerosearch" type="button">
+        <div class="proj-cover c-coral" data-cover="aerosearch">
+          <svg viewBox="0 0 400 200" class="cover-art" aria-hidden="true">
+            <g transform="translate(120 18) scale(.85)">
+              <path class="seg s1" d="M92 58 30 92v12l62-18z" fill="#FF6B4A" fill-opacity=".28" stroke="#FF6B4A" stroke-width="2"/>
+              <path class="seg s2" d="M108 58 170 92v12l-62-18z" fill="#3B9EF5" fill-opacity=".28" stroke="#3B9EF5" stroke-width="2"/>
+              <path class="seg s3" d="M100 8c6 0 9 10 9 22l1 100h-20l1-100c0-12 3-22 9-22z" fill="#5B4CF0" fill-opacity=".22" stroke="#5B4CF0" stroke-width="2"/>
+              <path class="seg s4" d="M92 132 70 148v8l30-6 30 6v-8l-22-16z" fill="#10B981" fill-opacity=".28" stroke="#10B981" stroke-width="2"/>
+            </g>
+            <g font-family="JetBrains Mono, monospace" font-size="10" font-weight="500">
+              <rect x="40" y="70" width="62" height="18" rx="5" fill="#FF6B4A"/><text x="47" y="83" fill="#fff">wing_L</text>
+              <rect x="300" y="70" width="62" height="18" rx="5" fill="#3B9EF5"/><text x="307" y="83" fill="#fff">wing_R</text>
+              <rect x="226" y="22" width="70" height="18" rx="5" fill="#5B4CF0"/><text x="233" y="35" fill="#fff">fuselage</text>
+              <rect x="226" y="160" width="50" height="18" rx="5" fill="#10B981"/><text x="233" y="173" fill="#fff">tail</text>
+            </g>
+          </svg>
+          <span class="cover-badge gold">1st Prize ×2</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-kicker"><span>Detection · Retrieval</span><span>2026</span></div>
+          <h3>AeroSearch</h3>
+          <p>Military aircraft part detection &amp; visual similarity search across 20 aircraft types and 30 part classes.</p>
+          <div class="chips sm"><span class="chip">YOLO-Seg</span><span class="chip">ConvNeXt</span><span class="chip">Metric Learning</span><span class="chip">FAISS</span></div>
+        </div>
+        <span class="proj-open" aria-hidden="true">↗</span>
+      </button>
+    </div>
+
+    <!-- Fisheye -->
+    <div class="proj reveal" style="--d:2">
+      <button class="proj-card tilt" data-project="fisheye" type="button">
+        <div class="proj-cover c-sky" data-cover="fisheye">
+          <svg viewBox="0 0 400 200" class="cover-art" aria-hidden="true">
+            <defs><clipPath id="fishClip"><circle cx="200" cy="100" r="82"/></clipPath></defs>
+            <circle cx="200" cy="100" r="84" fill="#fff"/>
+            <g clip-path="url(#fishClip)" fill="none" stroke="#D3E8FB" stroke-width="1.5">
+              <ellipse cx="200" cy="100" rx="20" ry="82"/><ellipse cx="200" cy="100" rx="45" ry="82"/><ellipse cx="200" cy="100" rx="68" ry="82"/>
+              <ellipse cx="200" cy="100" rx="82" ry="20"/><ellipse cx="200" cy="100" rx="82" ry="45"/><ellipse cx="200" cy="100" rx="82" ry="68"/>
+              <path d="M118 100h164M200 18v164"/>
+            </g>
+            <g class="fish-objs">
+              <path d="M168 70q10-8 22-6l2 22q-12 0-22 6z" fill="#FF6B4A" fill-opacity=".35" stroke="#FF6B4A" stroke-width="2"/>
+              <path d="M222 108q14-2 24 6l-6 20q-10-6-20-5z" fill="#10B981" fill-opacity=".35" stroke="#10B981" stroke-width="2"/>
+              <path d="M150 118q8 4 12 14l-14 8q-4-8-10-12z" fill="#5B4CF0" fill-opacity=".35" stroke="#5B4CF0" stroke-width="2"/>
+            </g>
+            <circle cx="200" cy="100" r="84" fill="none" stroke="#3B9EF5" stroke-width="2"/>
+          </svg>
+          <span class="cover-badge">Journal · Q2</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-kicker"><span>Object Detection</span><span>2026</span></div>
+          <h3>Beyond Bounding Boxes</h3>
+          <p>Segmentation supervision (via SAM) to beat fisheye distortion in object detection.</p>
+          <div class="chips sm"><span class="chip">SAM</span><span class="chip">YOLO</span><span class="chip">Instance Seg.</span></div>
+        </div>
+        <span class="proj-open" aria-hidden="true">↗</span>
+      </button>
+    </div>
+
+    <!-- AeroRetrieval -->
+    <div class="proj reveal wide" style="--d:3">
+      <button class="proj-card tilt" data-project="aeroretrieval" type="button">
+        <div class="proj-cover c-mint" data-cover="aeroretrieval">
+          <svg viewBox="0 0 400 200" class="cover-art" aria-hidden="true">
+            <rect x="70" y="24" width="260" height="34" rx="17" fill="#fff"/>
+            <circle cx="92" cy="41" r="7" fill="none" stroke="#0A8F63" stroke-width="2.2"/><path d="m97 46 5 5" stroke="#0A8F63" stroke-width="2.2" stroke-linecap="round"/>
+            <text x="110" y="45.5" font-family="JetBrains Mono, monospace" font-size="11" fill="#45434D">"turboprop engine, 1970s archive"</text>
+            <g class="emb">
+              <g fill="#10B981"><circle cx="120" cy="120" r="5"/><circle cx="138" cy="108" r="4"/><circle cx="132" cy="134" r="4"/><circle cx="110" cy="140" r="3.5"/><circle cx="150" cy="126" r="3.5"/></g>
+              <g fill="#5B4CF0"><circle cx="250" cy="110" r="5"/><circle cx="268" cy="96" r="4"/><circle cx="276" cy="122" r="4"/><circle cx="240" cy="132" r="3.5"/><circle cx="262" cy="140" r="3.5"/></g>
+              <g fill="#F5A524"><circle cx="190" cy="160" r="5"/><circle cx="206" cy="150" r="4"/><circle cx="178" cy="176" r="4"/><circle cx="212" cy="172" r="3.5"/></g>
+              <g fill="#FF6B4A"><circle cx="320" cy="160" r="5"/><circle cx="336" cy="150" r="4"/><circle cx="310" cy="176" r="3.5"/></g>
+            </g>
+            <circle class="q" cx="132" cy="122" r="22" fill="none" stroke="#0A8F63" stroke-width="1.6" stroke-dasharray="4 4"/>
+            <path d="M132 100 C 132 80, 200 70, 200 58" fill="none" stroke="#0A8F63" stroke-width="1.6" stroke-dasharray="3 4"/>
+          </svg>
+          <span class="cover-badge">Turkish Aerospace · LIFT UP</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-kicker"><span>Vision-Language</span><span>2025 — 2026</span></div>
+          <h3>AeroRetrieval</h3>
+          <p>A vision-language search engine for aviation archives, built on multimodal embedding models.</p>
+          <div class="chips sm"><span class="chip">Multimodal Embeddings</span><span class="chip">Retrieval</span><span class="chip">VLM</span></div>
+        </div>
+        <span class="proj-open" aria-hidden="true">↗</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Project details (used by the modal) -->
+  <template id="tpl-retailglue">
+    <span class="m-kicker iris">CVPR 2026 · Image Matching Workshop</span>
+    <h3>RetailGlue: Semantic Product-Level Image Stitching for Retail Shelf Panoramas</h3>
+    <div class="m-metrics">
+      <div><b>88.4%</b><span>end-to-end F1 (SOTA)</span></div>
+      <div><b>20×</b><span>faster than RoMa v2</span></div>
+      <div><b>SKU-110K</b><span>detector training set</span></div>
+    </div>
+    <p>Repetitive shelf environments make classic stitching drift catastrophically: every can of soda looks like every other can of soda. RetailGlue flips the problem with an <b>inverted detect-then-match</b> architecture.</p>
+    <ol class="m-steps">
+      <li><b>Detect.</b> A YOLOv11l detector trained on SKU-110K localizes every product robustly.</li>
+      <li><b>Describe.</b> DINOv3 embeddings provide semantic descriptors for each product.</li>
+      <li><b>Match.</b> A fine-tuned LightGlue matcher moves matching from low-level features to <em>product identities</em>.</li>
+      <li><b>Stitch.</b> A graph-based framework with RANSAC homography estimation handles discontinuous sequences seamlessly.</li>
+    </ol>
+    <p>We also co-created a new benchmark dataset. The work was accepted to the CVPR Workshop on Image Matching and Local Features.</p>
+    <div class="chips"><span class="chip iris">YOLOv11l</span><span class="chip coral">DINOv3</span><span class="chip mint">LightGlue</span><span class="chip sky">RANSAC</span><span class="chip sun">Graph optimization</span></div>
+  </template>
+
+  <template id="tpl-aerosearch">
+    <span class="m-kicker coral">1st Prize · SIU 2026 &amp; ESTÜ Project Fair</span>
+    <h3>AeroSearch: Military Aircraft Part Detection &amp; Visual Retrieval System</h3>
+    <div class="m-metrics">
+      <div><b>20</b><span>aircraft types</span></div>
+      <div><b>30</b><span>part classes</span></div>
+      <div><b>2×</b><span>first prizes</span></div>
+    </div>
+    <p>An end-to-end computer vision system for military aircraft part recognition and visual similarity search.</p>
+    <ol class="m-steps">
+      <li><b>Data.</b> Manually labeled segmentation data for 30 aircraft part classes in CVAT.</li>
+      <li><b>Segment.</b> Trained YOLO instance segmentation to isolate parts.</li>
+      <li><b>Classify.</b> ConvNeXt / DINOv3-based metadata classification.</li>
+      <li><b>Embed &amp; search.</b> Metric learning with a custom <em>hierarchical quadruplet loss</em>; part embeddings indexed with FAISS.</li>
+    </ol>
+    <p>The project won <b>First Place</b> in the Computer Engineering Project Competition and the undergraduate poster competition at <b>IEEE SIU 2026</b>.</p>
+    <div class="chips"><span class="chip coral">CVAT</span><span class="chip iris">YOLO-Seg</span><span class="chip mint">ConvNeXt</span><span class="chip sky">DINOv3</span><span class="chip sun">FAISS</span></div>
+  </template>
+
+  <template id="tpl-fisheye">
+    <span class="m-kicker sky">Journal of Visual Communication and Image Representation · Q2</span>
+    <h3>Beyond Bounding Boxes: Segmentation Supervision for Robust Object Detection in Fisheye Images</h3>
+    <p>Fisheye lenses bend straight lines and squash objects near the edges, so rectangular boxes become a poor description of what's actually there.</p>
+    <ol class="m-steps">
+      <li><b>Convert.</b> Turned traditional bounding-box labels into segmentation masks using <b>SAM</b> (Segment Anything).</li>
+      <li><b>Retrain.</b> Retrained state-of-the-art YOLO models for instance segmentation.</li>
+      <li><b>Evaluate.</b> Showed improved detection precision across object classes under fisheye distortion.</li>
+    </ol>
+    <p>Published in the Journal of Visual Communication and Image Representation, 104798, 2026.</p>
+    <div class="chips"><span class="chip sky">SAM</span><span class="chip iris">YOLO</span><span class="chip mint">Instance Segmentation</span></div>
+  </template>
+
+  <template id="tpl-aeroretrieval">
+    <span class="m-kicker mint">LIFT UP 2025–2026 · Turkish Aerospace Industries</span>
+    <h3>AeroRetrieval: A Vision-Language Search Engine for Aviation Archives</h3>
+    <p>A search engine that lets you query aviation archives with natural language and images, built on multimodal embedding models.</p>
+    <p>Published in the Proceedings of LIFT UP 2025–2026 Projects, Turkish Aerospace Industries, 2026.</p>
+    <div class="chips"><span class="chip mint">Multimodal Embeddings</span><span class="chip iris">Vision-Language</span><span class="chip sky">Retrieval</span></div>
+  </template>
+</section>
+
+<!-- ============ PUBLICATIONS ============ -->
+<section class="section container" id="publications">
+  <div class="sec-head reveal">
+    <span class="sec-label"><i class="dot sky"></i>04 — Publications</span>
+    <h2>On the <em>record</em>.</h2>
+  </div>
+
+  <ol class="pubs">
+    <li class="pub reveal" style="--d:0">
+      <span class="pub-year">2026</span>
+      <div class="pub-main">
+        <span class="venue iris">CVPR Workshop</span>
+        <h3>RetailGlue: Semantic Product-Level Image Stitching for Retail Shelf Panoramas</h3>
+        <p>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2026.</p>
+      </div>
+      <button class="cite-btn" type="button" data-cite="&quot;RetailGlue: Semantic Product-Level Image Stitching for Retail Shelf Panoramas,&quot; Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2026.">Cite</button>
+    </li>
+    <li class="pub reveal" style="--d:1">
+      <span class="pub-year">2026</span>
+      <div class="pub-main">
+        <span class="venue sky">Journal · Q2</span>
+        <h3>Beyond Bounding Boxes: Segmentation Supervision for Robust Object Detection in Fisheye Images</h3>
+        <p>Journal of Visual Communication and Image Representation, 104798, 2026.</p>
+      </div>
+      <button class="cite-btn" type="button" data-cite="&quot;Beyond Bounding Boxes: Segmentation Supervision for Robust Object Detection in Fisheye Images,&quot; Journal of Visual Communication and Image Representation, 104798, 2026.">Cite</button>
+    </li>
+    <li class="pub reveal" style="--d:2">
+      <span class="pub-year">2026</span>
+      <div class="pub-main">
+        <span class="venue coral">IEEE SIU</span>
+        <h3>A Polygon-Based Aircraft and Component Dataset: Studies on Classification, Context Prediction, and Component Detection</h3>
+        <p>Signal Processing and Communications Applications Conference (SIU), 2026.</p>
+      </div>
+      <button class="cite-btn" type="button" data-cite="&quot;A Polygon-Based Aircraft and Component Dataset: Studies on Classification, Context Prediction, and Component Detection,&quot; Signal Processing and Communications Applications Conference (SIU), 2026.">Cite</button>
+    </li>
+    <li class="pub reveal" style="--d:3">
+      <span class="pub-year">2026</span>
+      <div class="pub-main">
+        <span class="venue mint">LIFT UP</span>
+        <h3>AeroRetrieval: A Vision-Language Search Engine for Aviation Archives based on Multimodal Embedding Models</h3>
+        <p>Proceedings of LIFT UP 2025–2026 Projects, Turkish Aerospace Industries, 2026.</p>
+      </div>
+      <button class="cite-btn" type="button" data-cite="&quot;AeroRetrieval: A Vision-Language Search Engine for Aviation Archives based on Multimodal Embedding Models,&quot; Proceedings of LIFT UP 2025-2026 Projects, Turkish Aerospace Industries, 2026.">Cite</button>
+    </li>
+  </ol>
+</section>
+
+<!-- ============ AWARDS ============ -->
+<section class="section container" id="awards">
+  <div class="sec-head reveal">
+    <span class="sec-label"><i class="dot sun"></i>05 — Awards &amp; Honors</span>
+    <h2>Hall of <em>fame</em>.</h2>
+    <p class="sec-sub">Tap a card for a little celebration and the photo album behind it.</p>
+  </div>
+
+  <div class="awards">
+    <button class="award feature reveal" style="--d:0" type="button" data-award="siu">
+      <div class="award-info">
+        <span class="medal gold"><b>1st</b></span>
+        <span class="award-org">IEEE SIU 2026</span>
+        <h3>1st Prize — Undergraduate Senior Project Poster Competition</h3>
+        <p>Signal Processing and Communications Applications Conference, awarded for <b>AeroSearch</b>.</p>
+        <span class="award-cta"><span class="photo-count">Photos</span> · open album →</span>
+      </div>
+      <div class="stack" aria-hidden="true">
+        <div class="polaroid p1"><div class="ph sun"></div></div>
+        <div class="polaroid p2"><div class="ph coral"></div></div>
+        <div class="polaroid p3"><div class="ph iris"></div></div>
+      </div>
+      <div class="shine" aria-hidden="true"></div>
+    </button>
+
+    <button class="award feature reveal" style="--d:1" type="button" data-award="estu">
+      <div class="award-info">
+        <span class="medal gold"><b>1st</b></span>
+        <span class="award-org">ESTÜ · 19th Project Fair</span>
+        <h3>1st Prize in Computer Engineering</h3>
+        <p>19th Project Fair and Exhibition, Eskişehir Technical University, awarded for <b>AeroSearch</b>.</p>
+        <span class="award-cta"><span class="photo-count">Photos</span> · open album →</span>
+      </div>
+      <div class="stack" aria-hidden="true">
+        <div class="polaroid p1"><div class="ph mint"></div></div>
+        <div class="polaroid p2"><div class="ph sky"></div></div>
+        <div class="polaroid p3"><div class="ph sun"></div></div>
+      </div>
+      <div class="shine" aria-hidden="true"></div>
+    </button>
+
+    <button class="award feature span-2 grad reveal" style="--d:2" type="button" data-award="graduation">
+      <div class="award-info">
+        <span class="medal silver"><b>2nd</b></span>
+        <span class="award-org">ESTÜ · Faculty of Engineering · 2026</span>
+        <h3>2nd Rank in the Faculty of Engineering</h3>
+        <p>Ranked 2nd among all graduating seniors, both in the Computer Engineering department and across every department of the Faculty of Engineering. Confirmed by an official letter from the Dean's Office.</p>
+        <div class="rank-pills">
+          <span><b>#2</b> Computer Engineering</span>
+          <span><b>#2</b> Faculty of Engineering</span>
+        </div>
+        <span class="award-cta">View photo &amp; official letter →</span>
+      </div>
+      <div class="duo" aria-hidden="true">
+        <figure class="duo-doc" data-idx="1"><img src="assets/img/awards/graduation/2.jpg" alt="" loading="lazy"><span class="duo-label">Official letter</span></figure>
+        <figure class="duo-photo" data-idx="0"><img src="assets/img/awards/graduation/1.jpg" alt="" loading="lazy"></figure>
+        <span class="duo-stamp">Class of<br><b>2026</b></span>
+      </div>
+      <div class="shine" aria-hidden="true"></div>
+    </button>
+
+    <button class="award span-2 reveal" style="--d:3" type="button" data-award="tubitak">
+      <span class="medal bronze"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V15c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/></svg></span>
+      <div>
+        <span class="award-org">TÜBİTAK · 2025–2026</span>
+        <h3>3501 Undergraduate Research Scholarship</h3>
+        <p>Spatio-temporal deep learning for driving videos.</p>
+      </div>
+      <div class="shine" aria-hidden="true"></div>
+    </button>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section container" id="skills">
+  <div class="sec-head reveal">
+    <span class="sec-label"><i class="dot rose"></i>06 — Toolbox</span>
+    <h2>What I <em>work with</em>.</h2>
+  </div>
+
+  <div class="skills">
+    <article class="skill-card reveal" style="--d:0">
+      <span class="skill-icon iris"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/></svg></span>
+      <h3>Computer Vision</h3>
+      <p>Image processing, object detection, segmentation, image stitching, keypoint &amp; pose estimation, 3D reconstruction.</p>
+    </article>
+    <article class="skill-card reveal" style="--d:1">
+      <span class="skill-icon coral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="m7 7 3 4M7 17l3-4M14 11l3-4M14 13l3 4"/></svg></span>
+      <h3>Machine &amp; Deep Learning</h3>
+      <p>Supervised &amp; unsupervised learning, transfer learning, metric learning, fine-tuning, Transformers.</p>
+    </article>
+    <article class="skill-card reveal" style="--d:2">
+      <span class="skill-icon mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h10"/><circle cx="18" cy="17" r="2.5"/></svg></span>
+      <h3>MLOps &amp; Deployment</h3>
+      <p>MLflow, DVC, TorchServe, ONNX, Flask, FastAPI, Docker, Git, AWS, reproducible pipelines.</p>
+    </article>
+    <article class="skill-card reveal" style="--d:3">
+      <span class="skill-icon sun"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg></span>
+      <h3>Python Ecosystem</h3>
+      <p>PyTorch, TensorFlow, OpenCV, NumPy, Pandas, SciPy, scikit-learn, Matplotlib, Seaborn.</p>
+    </article>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>PyTorch</span><span>DINOv3</span><span>LightGlue</span><span>YOLOv11</span><span>SAM</span><span>VGGT</span><span>DUSt3R</span><span>ConvNeXt</span><span>NaFlexViT</span><span>FAISS</span><span>OpenCV</span><span>TensorFlow</span>
+      <span>PyTorch</span><span>DINOv3</span><span>LightGlue</span><span>YOLOv11</span><span>SAM</span><span>VGGT</span><span>DUSt3R</span><span>ConvNeXt</span><span>NaFlexViT</span><span>FAISS</span><span>OpenCV</span><span>TensorFlow</span>
+    </div>
+    <div class="track rev">
+      <span>MLflow</span><span>DVC</span><span>Weights &amp; Biases</span><span>Docker</span><span>FastAPI</span><span>TorchServe</span><span>ONNX</span><span>MinIO</span><span>AWS</span><span>CVAT</span><span>Git</span><span>scikit-learn</span>
+      <span>MLflow</span><span>DVC</span><span>Weights &amp; Biases</span><span>Docker</span><span>FastAPI</span><span>TorchServe</span><span>ONNX</span><span>MinIO</span><span>AWS</span><span>CVAT</span><span>Git</span><span>scikit-learn</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section container contact" id="contact">
+  <div class="contact-card reveal">
+    <span class="sec-label"><i class="dot iris"></i>07 — Contact</span>
+    <h2>Let's build something<br>that <em>sees</em>.</h2>
+    <p>Open to research collaborations, computer vision projects and a good conversation about modern architectures.</p>
+    <div class="contact-actions">
+      <button class="btn btn-primary magnetic copy-email" type="button" data-copy="ardaoztuner3@gmail.com">ardaoztuner3@gmail.com <span class="arr">⧉</span></button>
+      <a class="btn btn-ghost magnetic" href="https://github.com/arda92a" target="_blank" rel="noopener">GitHub <span class="arr">↗</span></a>
+      <a class="btn btn-ghost magnetic" href="https://www.linkedin.com/in/arda-%C3%B6zt%C3%BCner" target="_blank" rel="noopener">LinkedIn <span class="arr">↗</span></a>
+    </div>
+    <div class="contact-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer container">
+  <span>© <span id="year">2026</span> Arda Öztüner · Istanbul</span>
+  <span class="footer-hint">Press <kbd>⌘</kbd><kbd>K</kbd> to jump anywhere</span>
+  <a href="#top" class="to-top">Back to top ↑</a>
+</footer>
+
+<!-- ============ OVERLAYS ============ -->
+<div class="modal" id="projModal" role="dialog" aria-modal="true" aria-label="Project details" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel">
+    <button class="icon-btn modal-close" type="button" data-close aria-label="Close">✕</button>
+    <div class="modal-content" id="projModalContent"></div>
+    <div class="modal-gallery" id="projModalGallery"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo album" hidden>
+  <div class="lb-top">
+    <span class="lb-title" id="lbTitle"></span>
+    <span class="lb-count" id="lbCount"></span>
+    <button class="icon-btn" type="button" id="lbClose" aria-label="Close">✕</button>
+  </div>
+  <button class="lb-nav prev" type="button" id="lbPrev" aria-label="Previous photo">←</button>
+  <figure class="lb-stage">
+    <img id="lbImg" alt="">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button class="lb-nav next" type="button" id="lbNext" aria-label="Next photo">→</button>
+  <div class="lb-thumbs" id="lbThumbs"></div>
+</div>
+
+<div class="cmd" id="cmd" role="dialog" aria-modal="true" aria-label="Quick menu" hidden>
+  <div class="cmd-backdrop" data-close></div>
+  <div class="cmd-panel">
+    <div class="cmd-input">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="cmdInput" type="text" placeholder="Jump to a section or run an action…" autocomplete="off" spellcheck="false">
+      <kbd>esc</kbd>
+    </div>
+    <ul class="cmd-list" id="cmdList" role="listbox"></ul>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/media.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
